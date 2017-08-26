@@ -108,4 +108,34 @@
     [self.avSS speakUtterance:utterance];
     
 }
+
+#pragma mark - 代理方法
+//已经取消说话
+- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didCancelSpeechUtterance:(AVSpeechUtterance *)utterance {
+    NSLog(@"已经取消说话");
+}
+
+//已经继续说话
+- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didContinueSpeechUtterance:(AVSpeechUtterance *)utterance {
+    NSLog(@"已经继续说话");
+}
+//已经说完
+- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didFinishSpeechUtterance:(AVSpeechUtterance *)utterance {
+    NSLog(@"经说完");
+}
+//已经暂停
+- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didPauseSpeechUtterance:(AVSpeechUtterance *)utterance {
+    NSLog(@"已经暂停");
+}
+
+//已经开始
+- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer didStartSpeechUtterance:(AVSpeechUtterance *)utterance {
+    NSLog(@"已经开始");
+}
+//将要说某段话
+- (void)speechSynthesizer:(AVSpeechSynthesizer *)synthesizer willSpeakRangeOfSpeechString:(NSRange)characterRange utterance:(AVSpeechUtterance *)utterance {
+    //[utterance.speechString substringWithRange:characterRange];
+    NSLog(@"将要说--%@---",[utterance.speechString substringWithRange:characterRange]);
+}
+
 @end
