@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>中国</key>
+	<dict>
+		<key>EG</key>
+		<string>你好！早上吃饭了吗？我们一起吧！</string>
+		<key>LS</key>
+		<string>zh-CN</string>
+	</dict>
+	<key>香港</key>
+	<dict>
+		<key>EG</key>
+		<string>你好！早上吃饭了吗？我们一起吧！</string>
+		<key>LS</key>
+		<string>zh-TW</string>
+	</dict>
+	<key>澳门</key>
+	<dict>
+		<key>EG</key>
+		<string>你好！早上吃饭了吗？我们一起吧！</string>
+		<key>LS</key>
+		<string>zh-TW</string>
+	</dict>
+	<key>台湾</key>
+	<dict>
+		<key>EG</key>
+		<string>你好！早上吃饭了吗？我们一起吧！</string>
+		<key>LS</key>
+		<string>zh-TW</string>
+	</dict>
+	<key>日本</key>
+	<dict>
+		<key>EG</key>
+		<string>こんにちは!朝ご飯を食べましたか？私たち一緒にしよう！</string>
+		<key>LS</key>
+		<string>ja-JP</string>
+	</dict>
+	<key>美国</key>
+	<dict>
+		<key>EG</key>
+		<string>Hello! Did you have breakfast this morning? Let&apos;s go together!</string>
+		<key>LS</key>
+		<string>en-US</string>
+	</dict>
+	<key>英国</key>
+	<dict>
+		<key>EG</key>
+		<string>Hello! Did you have breakfast this morning? Let&apos;s go together!</string>
+		<key>LS</key>
+		<string>en-GB</string>
+	</dict>
+	<key>俄国</key>
+	<dict>
+		<key>EG</key>
+		<string>Привет!Утром на обед?Мы вместе, хорошо!</string>
+		<key>LS</key>
+		<string>ru-RU</string>
+	</dict>
+	<key>法国</key>
+	<dict>
+		<key>EG</key>
+		<string>Bonjour! Matin mangé? Nous!</string>
+		<key>LS</key>
+		<string>fr-FR</string>
+	</dict>
+	<key>阿拉伯</key>
+	<dict>
+		<key>EG</key>
+		<string> مرحبا!  في الصباح  لتناول العشاء؟  تناول الطعام معا  ! </string>
+		<key>LS</key>
+		<string>ar-SA</string>
+	</dict>
+	<key>韩国</key>
+	<dict>
+		<key>EG</key>
+		<string>안녕 하세요!아침에 밥을 먹었습니까?우리 같이 합시다!</string>
+		<key>LS</key>
+		<string>ko-KR</string>
+	</dict>
+	<key>芬兰</key>
+	<dict>
+		<key>EG</key>
+		<string>hei!huomenna syömään?syödään yhdessä.</string>
+		<key>LS</key>
+		<string>nl-NL</string>
+	</dict>
+	<key>德国</key>
+	<dict>
+		<key>EG</key>
+		<string>Hallo!Morgen essen?Zusammen Essen!</string>
+		<key>LS</key>
+		<string>de-DE</string>
+	</dict>
+</dict>
+</plist>

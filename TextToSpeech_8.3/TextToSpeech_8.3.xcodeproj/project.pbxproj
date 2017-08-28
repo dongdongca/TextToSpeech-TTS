@@ -10,11 +10,17 @@
 		DD521B651F511C7B0044981A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD521B641F511C7B0044981A /* main.m */; };
 		DD521B681F511C7B0044981A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD521B671F511C7B0044981A /* AppDelegate.m */; };
 		DD521B6B1F511C7B0044981A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD521B6A1F511C7B0044981A /* ViewController.m */; };
-		DD521B6E1F511C7B0044981A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD521B6C1F511C7B0044981A /* Main.storyboard */; };
 		DD521B701F511C7B0044981A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD521B6F1F511C7B0044981A /* Assets.xcassets */; };
 		DD521B731F511C7B0044981A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD521B711F511C7B0044981A /* LaunchScreen.storyboard */; };
 		DD521B7E1F511C7B0044981A /* TextToSpeech_8_3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD521B7D1F511C7B0044981A /* TextToSpeech_8_3Tests.m */; };
 		DD521B891F511C7B0044981A /* TextToSpeech_8_3UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD521B881F511C7B0044981A /* TextToSpeech_8_3UITests.m */; };
+		DDB00CDD1F53BF4800C52FFE /* selectedCountryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB00CD41F53BF4800C52FFE /* selectedCountryCell.m */; };
+		DDB00CDE1F53BF4800C52FFE /* selectedCountryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDB00CD51F53BF4800C52FFE /* selectedCountryCell.xib */; };
+		DDB00CDF1F53BF4800C52FFE /* SelectedCountryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB00CD71F53BF4800C52FFE /* SelectedCountryViewController.m */; };
+		DDB00CE01F53BF4800C52FFE /* TextToSpeechViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB00CD91F53BF4800C52FFE /* TextToSpeechViewController.m */; };
+		DDB00CE11F53BF4800C52FFE /* TextToSpeechViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDB00CDA1F53BF4800C52FFE /* TextToSpeechViewController.xib */; };
+		DDB00CE21F53BF4800C52FFE /* TTSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB00CDC1F53BF4800C52FFE /* TTSModel.m */; };
+		DDB00CE41F53BF5200C52FFE /* LanguageList.plist in Resources */ = {isa = PBXBuildFile; fileRef = DDB00CE31F53BF5200C52FFE /* LanguageList.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +47,6 @@
 		DD521B671F511C7B0044981A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DD521B691F511C7B0044981A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DD521B6A1F511C7B0044981A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		DD521B6D1F511C7B0044981A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD521B6F1F511C7B0044981A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD521B721F511C7B0044981A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD521B741F511C7B0044981A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +56,17 @@
 		DD521B841F511C7B0044981A /* TextToSpeech_8.3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextToSpeech_8.3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD521B881F511C7B0044981A /* TextToSpeech_8_3UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextToSpeech_8_3UITests.m; sourceTree = "<group>"; };
 		DD521B8A1F511C7B0044981A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDB00CD31F53BF4800C52FFE /* selectedCountryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = selectedCountryCell.h; sourceTree = "<group>"; };
+		DDB00CD41F53BF4800C52FFE /* selectedCountryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = selectedCountryCell.m; sourceTree = "<group>"; };
+		DDB00CD51F53BF4800C52FFE /* selectedCountryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = selectedCountryCell.xib; sourceTree = "<group>"; };
+		DDB00CD61F53BF4800C52FFE /* SelectedCountryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedCountryViewController.h; sourceTree = "<group>"; };
+		DDB00CD71F53BF4800C52FFE /* SelectedCountryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedCountryViewController.m; sourceTree = "<group>"; };
+		DDB00CD81F53BF4800C52FFE /* TextToSpeechViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextToSpeechViewController.h; sourceTree = "<group>"; };
+		DDB00CD91F53BF4800C52FFE /* TextToSpeechViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextToSpeechViewController.m; sourceTree = "<group>"; };
+		DDB00CDA1F53BF4800C52FFE /* TextToSpeechViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextToSpeechViewController.xib; sourceTree = "<group>"; };
+		DDB00CDB1F53BF4800C52FFE /* TTSModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSModel.h; sourceTree = "<group>"; };
+		DDB00CDC1F53BF4800C52FFE /* TTSModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTSModel.m; sourceTree = "<group>"; };
+		DDB00CE31F53BF5200C52FFE /* LanguageList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LanguageList.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +119,22 @@
 			children = (
 				DD521B661F511C7B0044981A /* AppDelegate.h */,
 				DD521B671F511C7B0044981A /* AppDelegate.m */,
+				DDB00CD31F53BF4800C52FFE /* selectedCountryCell.h */,
+				DDB00CD41F53BF4800C52FFE /* selectedCountryCell.m */,
+				DDB00CD51F53BF4800C52FFE /* selectedCountryCell.xib */,
+				DDB00CD61F53BF4800C52FFE /* SelectedCountryViewController.h */,
+				DDB00CD71F53BF4800C52FFE /* SelectedCountryViewController.m */,
+				DDB00CD81F53BF4800C52FFE /* TextToSpeechViewController.h */,
+				DDB00CD91F53BF4800C52FFE /* TextToSpeechViewController.m */,
+				DDB00CDA1F53BF4800C52FFE /* TextToSpeechViewController.xib */,
+				DDB00CDB1F53BF4800C52FFE /* TTSModel.h */,
+				DDB00CDC1F53BF4800C52FFE /* TTSModel.m */,
 				DD521B691F511C7B0044981A /* ViewController.h */,
 				DD521B6A1F511C7B0044981A /* ViewController.m */,
-				DD521B6C1F511C7B0044981A /* Main.storyboard */,
 				DD521B6F1F511C7B0044981A /* Assets.xcassets */,
 				DD521B711F511C7B0044981A /* LaunchScreen.storyboard */,
 				DD521B741F511C7B0044981A /* Info.plist */,
+				DDB00CE31F53BF5200C52FFE /* LanguageList.plist */,
 				DD521B631F511C7B0044981A /* Supporting Files */,
 			);
 			path = TextToSpeech_8.3;
@@ -249,7 +275,9 @@
 			files = (
 				DD521B731F511C7B0044981A /* LaunchScreen.storyboard in Resources */,
 				DD521B701F511C7B0044981A /* Assets.xcassets in Resources */,
-				DD521B6E1F511C7B0044981A /* Main.storyboard in Resources */,
+				DDB00CE41F53BF5200C52FFE /* LanguageList.plist in Resources */,
+				DDB00CE11F53BF4800C52FFE /* TextToSpeechViewController.xib in Resources */,
+				DDB00CDE1F53BF4800C52FFE /* selectedCountryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +302,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDB00CE01F53BF4800C52FFE /* TextToSpeechViewController.m in Sources */,
 				DD521B6B1F511C7B0044981A /* ViewController.m in Sources */,
+				DDB00CDF1F53BF4800C52FFE /* SelectedCountryViewController.m in Sources */,
+				DDB00CE21F53BF4800C52FFE /* TTSModel.m in Sources */,
+				DDB00CDD1F53BF4800C52FFE /* selectedCountryCell.m in Sources */,
 				DD521B681F511C7B0044981A /* AppDelegate.m in Sources */,
 				DD521B651F511C7B0044981A /* main.m in Sources */,
 			);
@@ -312,14 +344,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DD521B6C1F511C7B0044981A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DD521B6D1F511C7B0044981A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DD521B711F511C7B0044981A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -431,6 +455,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "LD.TextToSpeech-8-3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -444,6 +469,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "LD.TextToSpeech-8-3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -512,6 +538,7 @@
 				DD521B8F1F511C7B0044981A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD521B901F511C7B0044981A /* Build configuration list for PBXNativeTarget "TextToSpeech_8.3Tests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +547,7 @@
 				DD521B921F511C7B0044981A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD521B931F511C7B0044981A /* Build configuration list for PBXNativeTarget "TextToSpeech_8.3UITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +556,7 @@
 				DD521B951F511C7B0044981A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
