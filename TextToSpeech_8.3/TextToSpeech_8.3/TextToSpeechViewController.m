@@ -35,7 +35,15 @@
 //语速
 @property (weak, nonatomic) IBOutlet UISlider *rateSlider;
 @property (weak, nonatomic) IBOutlet UILabel *rateValue;
+//国家以及语言
 @property (weak, nonatomic) IBOutlet UILabel *languageOrCountry;
+//手机语言Code，可空
+@property (weak, nonatomic) IBOutlet UILabel *iPhoneLanguageCode;
+//谷歌翻译Code
+@property (weak, nonatomic) IBOutlet UILabel *googleTranslationCode;
+
+
+
 
 //合成器
 @property (nonatomic, strong) AVSpeechSynthesizer * avSS;
@@ -80,6 +88,8 @@
     self.contentTextField.text = currentMdoel.languagesOrCountry;
     self.currentLG.text = currentMdoel.googleLanguageCode;
     self.languageOrCountry.text = currentMdoel.languagesOrCountryCN;
+    self.iPhoneLanguageCode.text = currentMdoel.iPhoneLanguageCode;
+    self.googleTranslationCode.text = currentMdoel.googleTranslationCode;
     self.model = currentMdoel;
 }
 
