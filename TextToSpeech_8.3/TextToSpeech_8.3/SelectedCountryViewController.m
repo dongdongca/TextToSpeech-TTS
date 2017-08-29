@@ -10,30 +10,27 @@
 #import "selectedCountryCell.h"
 #import "TextToSpeechViewController.h"
 #import "TTSModel.h"
+#import "LanguageListModel.h"
 
 @interface SelectedCountryViewController ()
 //数据
-@property (nonatomic, strong) NSDictionary *dataSource;
-//国家数据
-@property (nonatomic, strong) NSArray *countryArray;
+@property (nonatomic, strong) NSMutableArray *dataSource;
 
 @end
 
 @implementation SelectedCountryViewController
 
-- (NSDictionary *)dataSource {
+- (NSMutableArray *)dataSource {
     if (!_dataSource) {
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"LanguageList.plist" ofType: nil];
-        _dataSource = [NSDictionary dictionaryWithContentsOfFile:path];
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"SpeechLanguageList.plist" ofType: nil];
+        NSArray *array = [NSArray arrayWithContentsOfFile:path];
+        _dataSource = [NSMutableArray arrayWithCapacity:array.count];
+        for (int i = 0; i < array.count; i++) {
+            LanguageListModel *model = [LanguageListModel languageListModelWithDict:array[i]];
+            [_dataSource addObject:model];
+        }
     }
     return _dataSource;
-}
-
-- (NSArray *)countryArray {
-    if (!_countryArray) {
-        _countryArray = [[NSArray alloc] init];
-    }
-    return _countryArray;
 }
 
 
@@ -42,9 +39,6 @@
     self.title = @"选择国家";
     
     [self.tableView registerNib:[UINib nibWithNibName:@"selectedCountryCell" bundle:nil] forCellReuseIdentifier:@"cellID"];
-    
-    self.countryArray = self.dataSource.allKeys;
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -55,7 +49,8 @@
 #pragma mark - Table view data delegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     TextToSpeechViewController *ttsVC = [[TextToSpeechViewController alloc] init];
-    ttsVC.dict  = [TTSModel modelWithDict:self.dataSource[self.countryArray[indexPath.row]]];
+    ttsVC.row = indexPath.row;
+    ttsVC.dataSource = self.dataSource;
     [self.navigationController pushViewController:ttsVC animated:true];
     [tableView deselectRowAtIndexPath:indexPath animated:true];
 }
@@ -67,13 +62,14 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.countryArray.count;
+    return self.dataSource.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     selectedCountryCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellID" forIndexPath:indexPath];
-    cell.countryName.text = self.countryArray[indexPath.row];
+    LanguageListModel *model = self.dataSource[indexPath.row];
+    cell.countryName.text = model.languagesOrCountry;
     
     return cell;
 }

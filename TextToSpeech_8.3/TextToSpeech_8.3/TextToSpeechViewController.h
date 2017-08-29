@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-@class TTSModel;
+@class LanguageListModel;
 
 @interface TextToSpeechViewController : UIViewController
 
-@property (nonatomic, strong) TTSModel *dict;
+@property (nonatomic, strong) LanguageListModel *model;
 
+@property (nonatomic, strong) NSArray *dataSource;
+
+@property (nonatomic, assign) NSInteger row;
 @end

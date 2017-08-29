@@ -8,7 +8,7 @@
 
 #import "TextToSpeechViewController.h"
 #import <AVFoundation/AVFoundation.h>
-#import "TTSModel.h"
+#import "LanguageListModel.h"
 
 @interface TextToSpeechViewController () <AVSpeechSynthesizerDelegate>
 
@@ -35,9 +35,12 @@
 //语速
 @property (weak, nonatomic) IBOutlet UISlider *rateSlider;
 @property (weak, nonatomic) IBOutlet UILabel *rateValue;
+@property (weak, nonatomic) IBOutlet UILabel *languageOrCountry;
 
 //合成器
 @property (nonatomic, strong) AVSpeechSynthesizer * avSS;
+
+
 
 @end
 
@@ -52,16 +55,32 @@
     return _avSS;
 }
 
-- (void)setDict:(TTSModel *)dict {
-    _dict = dict;
+- (void)setModel:(LanguageListModel *)model {
+    _model = model;
 }
+
+
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"下一个" style:UIBarButtonItemStylePlain target:self action:@selector(rightBarButtonClickAction)];
     
-    self.contentTextField.text = self.dict.EG;
-    self.currentLG.text = self.dict.LS;
+    [self setupProperties:self.dataSource[self.row]];
+    
+}
+
+- (void)rightBarButtonClickAction {
+    self.row++;
+    [self setupProperties:self.dataSource[self.row]];
+    
+}
+
+- (void)setupProperties:(LanguageListModel *)currentMdoel {
+    self.contentTextField.text = currentMdoel.languagesOrCountry;
+    self.currentLG.text = currentMdoel.googleLanguageCode;
+    self.languageOrCountry.text = currentMdoel.languagesOrCountryCN;
+    self.model = currentMdoel;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -69,12 +88,19 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)startAction:(UIButton *)sender {
+    if (![self.model.languageIsSupportSpeech boolValue]) {
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示框"message:@"该语言不支持语音播放" preferredStyle:UIAlertControllerStyleAlert];
+        [alertController addAction:[UIAlertAction actionWithTitle:@"知道了" style:UIAlertActionStyleCancel handler:nil]];
+        [self presentViewController:alertController animated:true completion:nil];
+        return;
+    }
+    
     if (self.avSS.speaking) {
         //询问是否暂停
         
     } else {
         //开始读
-        [self readingAloudWithString:self.contentTextField.text language: self.dict.LS];
+        [self readingAloudWithString:self.contentTextField.text language: self.model.iPhoneLanguageCode];
     }
 }
 //暂停

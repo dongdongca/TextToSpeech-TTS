@@ -14,6 +14,8 @@
 		DD521B731F511C7B0044981A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD521B711F511C7B0044981A /* LaunchScreen.storyboard */; };
 		DD521B7E1F511C7B0044981A /* TextToSpeech_8_3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD521B7D1F511C7B0044981A /* TextToSpeech_8_3Tests.m */; };
 		DD521B891F511C7B0044981A /* TextToSpeech_8_3UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD521B881F511C7B0044981A /* TextToSpeech_8_3UITests.m */; };
+		DDACD15F1F552989008566C3 /* SpeechLanguageList.plist in Resources */ = {isa = PBXBuildFile; fileRef = DDACD15E1F552989008566C3 /* SpeechLanguageList.plist */; };
+		DDACD1621F554ECC008566C3 /* LanguageListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDACD1611F554ECC008566C3 /* LanguageListModel.m */; };
 		DDB00CDD1F53BF4800C52FFE /* selectedCountryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB00CD41F53BF4800C52FFE /* selectedCountryCell.m */; };
 		DDB00CDE1F53BF4800C52FFE /* selectedCountryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDB00CD51F53BF4800C52FFE /* selectedCountryCell.xib */; };
 		DDB00CDF1F53BF4800C52FFE /* SelectedCountryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB00CD71F53BF4800C52FFE /* SelectedCountryViewController.m */; };
@@ -56,6 +58,9 @@
 		DD521B841F511C7B0044981A /* TextToSpeech_8.3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextToSpeech_8.3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD521B881F511C7B0044981A /* TextToSpeech_8_3UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextToSpeech_8_3UITests.m; sourceTree = "<group>"; };
 		DD521B8A1F511C7B0044981A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDACD15E1F552989008566C3 /* SpeechLanguageList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SpeechLanguageList.plist; sourceTree = "<group>"; };
+		DDACD1601F554ECC008566C3 /* LanguageListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LanguageListModel.h; sourceTree = "<group>"; };
+		DDACD1611F554ECC008566C3 /* LanguageListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LanguageListModel.m; sourceTree = "<group>"; };
 		DDB00CD31F53BF4800C52FFE /* selectedCountryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = selectedCountryCell.h; sourceTree = "<group>"; };
 		DDB00CD41F53BF4800C52FFE /* selectedCountryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = selectedCountryCell.m; sourceTree = "<group>"; };
 		DDB00CD51F53BF4800C52FFE /* selectedCountryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = selectedCountryCell.xib; sourceTree = "<group>"; };
@@ -129,12 +134,15 @@
 				DDB00CDA1F53BF4800C52FFE /* TextToSpeechViewController.xib */,
 				DDB00CDB1F53BF4800C52FFE /* TTSModel.h */,
 				DDB00CDC1F53BF4800C52FFE /* TTSModel.m */,
+				DDACD1601F554ECC008566C3 /* LanguageListModel.h */,
+				DDACD1611F554ECC008566C3 /* LanguageListModel.m */,
 				DD521B691F511C7B0044981A /* ViewController.h */,
 				DD521B6A1F511C7B0044981A /* ViewController.m */,
 				DD521B6F1F511C7B0044981A /* Assets.xcassets */,
 				DD521B711F511C7B0044981A /* LaunchScreen.storyboard */,
 				DD521B741F511C7B0044981A /* Info.plist */,
 				DDB00CE31F53BF5200C52FFE /* LanguageList.plist */,
+				DDACD15E1F552989008566C3 /* SpeechLanguageList.plist */,
 				DD521B631F511C7B0044981A /* Supporting Files */,
 			);
 			path = TextToSpeech_8.3;
@@ -277,6 +285,7 @@
 				DD521B701F511C7B0044981A /* Assets.xcassets in Resources */,
 				DDB00CE41F53BF5200C52FFE /* LanguageList.plist in Resources */,
 				DDB00CE11F53BF4800C52FFE /* TextToSpeechViewController.xib in Resources */,
+				DDACD15F1F552989008566C3 /* SpeechLanguageList.plist in Resources */,
 				DDB00CDE1F53BF4800C52FFE /* selectedCountryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +318,7 @@
 				DDB00CDD1F53BF4800C52FFE /* selectedCountryCell.m in Sources */,
 				DD521B681F511C7B0044981A /* AppDelegate.m in Sources */,
 				DD521B651F511C7B0044981A /* main.m in Sources */,
+				DDACD1621F554ECC008566C3 /* LanguageListModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
