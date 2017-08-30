@@ -21,7 +21,6 @@
 		DDB00CDF1F53BF4800C52FFE /* SelectedCountryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB00CD71F53BF4800C52FFE /* SelectedCountryViewController.m */; };
 		DDB00CE01F53BF4800C52FFE /* TextToSpeechViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB00CD91F53BF4800C52FFE /* TextToSpeechViewController.m */; };
 		DDB00CE11F53BF4800C52FFE /* TextToSpeechViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDB00CDA1F53BF4800C52FFE /* TextToSpeechViewController.xib */; };
-		DDB00CE21F53BF4800C52FFE /* TTSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DDB00CDC1F53BF4800C52FFE /* TTSModel.m */; };
 		DDB00CE41F53BF5200C52FFE /* LanguageList.plist in Resources */ = {isa = PBXBuildFile; fileRef = DDB00CE31F53BF5200C52FFE /* LanguageList.plist */; };
 /* End PBXBuildFile section */
 
@@ -69,8 +68,6 @@
 		DDB00CD81F53BF4800C52FFE /* TextToSpeechViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextToSpeechViewController.h; sourceTree = "<group>"; };
 		DDB00CD91F53BF4800C52FFE /* TextToSpeechViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextToSpeechViewController.m; sourceTree = "<group>"; };
 		DDB00CDA1F53BF4800C52FFE /* TextToSpeechViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextToSpeechViewController.xib; sourceTree = "<group>"; };
-		DDB00CDB1F53BF4800C52FFE /* TTSModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTSModel.h; sourceTree = "<group>"; };
-		DDB00CDC1F53BF4800C52FFE /* TTSModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTSModel.m; sourceTree = "<group>"; };
 		DDB00CE31F53BF5200C52FFE /* LanguageList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LanguageList.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,8 +129,6 @@
 				DDB00CD81F53BF4800C52FFE /* TextToSpeechViewController.h */,
 				DDB00CD91F53BF4800C52FFE /* TextToSpeechViewController.m */,
 				DDB00CDA1F53BF4800C52FFE /* TextToSpeechViewController.xib */,
-				DDB00CDB1F53BF4800C52FFE /* TTSModel.h */,
-				DDB00CDC1F53BF4800C52FFE /* TTSModel.m */,
 				DDACD1601F554ECC008566C3 /* LanguageListModel.h */,
 				DDACD1611F554ECC008566C3 /* LanguageListModel.m */,
 				DD521B691F511C7B0044981A /* ViewController.h */,
@@ -314,7 +309,6 @@
 				DDB00CE01F53BF4800C52FFE /* TextToSpeechViewController.m in Sources */,
 				DD521B6B1F511C7B0044981A /* ViewController.m in Sources */,
 				DDB00CDF1F53BF4800C52FFE /* SelectedCountryViewController.m in Sources */,
-				DDB00CE21F53BF4800C52FFE /* TTSModel.m in Sources */,
 				DDB00CDD1F53BF4800C52FFE /* selectedCountryCell.m in Sources */,
 				DD521B681F511C7B0044981A /* AppDelegate.m in Sources */,
 				DD521B651F511C7B0044981A /* main.m in Sources */,

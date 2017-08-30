@@ -500,7 +500,7 @@
 	</dict>
 	<dict>
 		<key>languageIsSupportSpeech</key>
-		<true/>
+		<false/>
 		<key>languagesOrCountry</key>
 		<string>اردو (پاکستان)</string>
 		<key>googleLanguageCode</key>
@@ -948,7 +948,7 @@
 	</dict>
 	<dict>
 		<key>languageIsSupportSpeech</key>
-		<true/>
+		<false/>
 		<key>languagesOrCountry</key>
 		<string>ລາວ (ລາວ)</string>
 		<key>googleLanguageCode</key>
@@ -996,7 +996,7 @@
 	</dict>
 	<dict>
 		<key>languageIsSupportSpeech</key>
-		<true/>
+		<false/>
 		<key>languagesOrCountry</key>
 		<string>Jawa (Indonesia)</string>
 		<key>googleLanguageCode</key>
@@ -1028,7 +1028,7 @@
 	</dict>
 	<dict>
 		<key>languageIsSupportSpeech</key>
-		<true/>
+		<false/>
 		<key>languagesOrCountry</key>
 		<string>Íslenska (Ísland)</string>
 		<key>googleLanguageCode</key>

@@ -80,8 +80,15 @@
 
 - (void)rightBarButtonClickAction {
     self.row++;
-    [self setupProperties:self.dataSource[self.row]];
-    
+    if (self.row <= self.dataSource.count - 1) {
+        [self setupProperties:self.dataSource[self.row]];
+    } else {
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示框"message:@"没有啦还要点啊————————" preferredStyle:UIAlertControllerStyleAlert];
+        [alertController addAction:[UIAlertAction actionWithTitle:@"知道了" style:UIAlertActionStyleCancel handler:nil]];
+        [self presentViewController:alertController animated:true completion:nil];
+        return;
+        
+    }
 }
 
 - (void)setupProperties:(LanguageListModel *)currentMdoel {
